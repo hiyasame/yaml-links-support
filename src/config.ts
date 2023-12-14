@@ -5,3 +5,8 @@ export function getRegexRuleList(): RegExp[] {
         .get<string[]>("rules")!
         .map(rule => new RegExp(rule, "g"));
 }
+
+export function getSupportFileTypes(): string[] {
+    return workspace.getConfiguration("yaml-links-support")
+        .get<string[]>("file-types")!;
+}

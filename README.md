@@ -24,3 +24,14 @@ vsce package
 ~~~
 
 如你所见，file 捕获组中的内容会被视作文件名，没有命名捕获组时则使用 group 0
+
+配置 `yaml-links-support.file-types` , 编辑可用语言类型 （并不只能支持yaml）
+
+~~~json
+{
+    "yaml-links-support.file-types": [
+        "yaml",
+        "plaintext",
+    ]
+}
+~~~
